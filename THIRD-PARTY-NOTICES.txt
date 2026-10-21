@@ -1,0 +1,53 @@
+Tank Combo 0.2.4 includes a modified build of Wrath Combo source.
+Wrath Combo is developed by Puni.sh and its contributors. Tank Combo is not
+an official Wrath Combo release and is not endorsed by those contributors.
+
+Wrath Combo source: https://github.com/PunishXIV/WrathCombo
+Commit: 95211afb800830ff16a8851e7bd29f6177043092 (1.0.4.27)
+Copyright (c) 2024, Puni.sh. BSD 3-Clause; LICENSE-WrathCombo.txt included.
+Modifications: manual tank-only entry point, no automatic rotation controller
+or stance automation, no replacement hooks/custom hotbar buttons/UI, local
+settings import, no public IPC/web updates, no item dispatch, log-only messages,
+and observation hook/lifecycle changes. See scripts/prepare-engine.ps1 and
+src/TankCombo.Engine.
+
+The following helper DLLs were copied from the user's installed Wrath Combo
+1.0.4.27 package for this local build. They are bundled beside TankCombo.dll;
+they do not require an installed or enabled Wrath Combo plugin.
+
+ECommons.dll 3.2.1.26
+https://github.com/NightmareXIV/ECommons
+Upstream submodule: 26d30b9ec14c3d3c18e335a9e4c7a5421dd134db
+Copyright (c) 2023 NightmareXIV. MIT; ECommons-LICENSE.txt included.
+
+PunishLib.dll 2.0.0.1
+https://github.com/PunishXIV/PunishLib
+Upstream submodule: 96c0cefa8ebf948b3d3d71d85994c61dc8430b5c
+Copyright (c) 2023, Puni.sh. BSD 3-Clause; PunishLib-LICENSE.txt included.
+
+WrathCombo.API.dll 1.0.0.0
+https://github.com/PunishXIV/WrathCombo.API
+Upstream submodule: b40c88cea6e6b62981d9822637a74fd50ed9c44b
+This is a helper type library, not WrathCombo.dll or a separate plugin.
+No separate root license file was found at the reviewed source revision.
+The existing user-installed binary is retained for this local build.
+
+System.Speech.dll 10.0.0.5
+https://github.com/dotnet/runtime/tree/v10.0.5
+Copyright (c) .NET Foundation and Contributors. MIT;
+System.Speech-LICENSE.txt included. Speech is not initialized by Tank Combo.
+
+Dalamud, FFXIVClientStructs, InteropGenerator.Runtime, Lumina, Lumina.Excel,
+Newtonsoft.Json, and Dalamud.Bindings libraries are supplied by the user's
+Dalamud installation. Their binaries are build references, not bundled.
+
+Waymark Preset Plugin display metadata and icon are used as a user-requested
+local display alias. The underlying functionality remains Tank Combo.
+This local plugin is not authored or endorsed by the Waymark contributors.
+Source: https://github.com/sourpuh/WaymarkPresetPlugin
+Icon: https://raw.githubusercontent.com/goatcorp/PluginDistD17/main/testing-live/WaymarkPresetPlugin/images/icon.png
+Display text was copied from the user's installed 1.5.5.4 manifest.
+Copyright (c) 2025 Infi, PunishedPineapple.
+MIT license included as WaymarkPresetPlugin-LICENSE.txt.
+
+
